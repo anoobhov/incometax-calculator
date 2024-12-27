@@ -24,25 +24,25 @@ document.getElementById("tax-form").addEventListener("submit", (event) =>   {
 });
 
 let darkmode = false
+const container = document.querySelector('.calculator-container')
+const h1=document.querySelector('.h1')
 document.querySelector('.btn').addEventListener('click',()=>{
     if(darkmode==false)
     {
         darkmode=true
         document.body.style.backgroundColor='black'
-        const container = document.querySelector('.calculator-container')
         container.style.backgroundColor='rgb(65, 63, 63)'
         container.style.color='white'
-        document.querySelector('.h1').style.color='white'
-        document.querySelector('.result').style.color='white'
+        h1.style.color='white'
+        result.style.color='white'
     }
     else
     {
         darkmode=false
         document.body.style.backgroundColor='#f9fafb'
-        const container = document.querySelector('.calculator-container')
         container.style.backgroundColor='#ffffff'
         container.style.color='black'
-        document.querySelector('.h1').style.color='#444'
-        document.querySelector('.result').style.color='black'
+        h1.style.color='#444'
+        result.style.color='black'
     }
 })
