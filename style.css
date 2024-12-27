@@ -28,11 +28,16 @@ img{
     height: 50px;
     width: auto;
 }
+.btn{
+    background-color: white;
+    cursor: pointer;
+}
 
 h1 {
     text-align: center;
     color: #444;
 }
+
 
 label {
     display: block;
@@ -50,7 +55,7 @@ input {
     font-size: 14px;
 }
 
-button {
+.button {
     width: 100%;
     background-color: #007bff;
     color: #fff;
@@ -63,7 +68,7 @@ button {
 }
 
 
-button:hover {
+.button:hover {
     background-color: #0056b3;
 }
 

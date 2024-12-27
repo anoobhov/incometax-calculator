@@ -22,3 +22,13 @@ document.getElementById("tax-form").addEventListener("submit", (event) =>   {
 
     result.textContent = `Your calculated tax is: ₹${tax.toFixed(2)}`;
 });
+
+
+document.querySelector('.btn').addEventListener('click',()=>{
+    document.body.style.backgroundColor='black'
+    const container = document.querySelector('.calculator-container')
+    container.style.backgroundColor='rgb(65, 63, 63)'
+    container.style.color='white'
+    document.querySelector('.h1').style.color='white'
+    document.querySelector('.result').style.color='white'
+})
