@@ -23,12 +23,26 @@ document.getElementById("tax-form").addEventListener("submit", (event) =>   {
     result.textContent = `Your calculated tax is: ₹${tax.toFixed(2)}`;
 });
 
-
+let darkmode = false
 document.querySelector('.btn').addEventListener('click',()=>{
-    document.body.style.backgroundColor='black'
-    const container = document.querySelector('.calculator-container')
-    container.style.backgroundColor='rgb(65, 63, 63)'
-    container.style.color='white'
-    document.querySelector('.h1').style.color='white'
-    document.querySelector('.result').style.color='white'
+    if(darkmode==false)
+    {
+        darkmode=true
+        document.body.style.backgroundColor='black'
+        const container = document.querySelector('.calculator-container')
+        container.style.backgroundColor='rgb(65, 63, 63)'
+        container.style.color='white'
+        document.querySelector('.h1').style.color='white'
+        document.querySelector('.result').style.color='white'
+    }
+    else
+    {
+        darkmode=false
+        document.body.style.backgroundColor='#f9fafb'
+        const container = document.querySelector('.calculator-container')
+        container.style.backgroundColor='#ffffff'
+        container.style.color='black'
+        document.querySelector('.h1').style.color='#444'
+        document.querySelector('.result').style.color='black'
+    }
 })
